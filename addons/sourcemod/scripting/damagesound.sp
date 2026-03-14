@@ -161,7 +161,7 @@ public OnPluginStart()
 
 	// Cvars: Create a global handle variable.
 	g_cvarEnable = PluginManager_CreateConVar("enable", "1", "Enables or disables this plugin");
-	g_cvarPath = PluginManager_CreateConVar("path", "buttons/button10.wav", "Path to damage sound file");
+	g_cvarPath = PluginManager_CreateConVar("path", "player/spitter/voice/attack/spitter_spit_01.wav", "Path to damage sound file");
 	g_cvarDelay = PluginManager_CreateConVar("delay", "0.0", "How many secounds should the plugin wait to play the sound again (in seconds).");
 	g_cvarActOnWeapons = PluginManager_CreateConVar("actonweapon","","Specifies which weapons damagesounds will play for.  Default is all");
 	g_cvarClient_Enable = PluginManager_CreateConVar("client_enable", "1", "Should the client have had DamageSound enabled by default? (1=yes/0=no)");
@@ -777,5 +777,4 @@ stock Client_InitializeVariables(client)
 		g_flClient_LastHit[client][i] = theGameTime;
 	}
 }
-
 
